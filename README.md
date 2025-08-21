@@ -2,6 +2,9 @@
 
 Neuro-Sketch is a Text-to-Image converter with Sign In/Sign Up authentication, light/dark theme support, and integrated payment system. Built for creativity and accessibility, it enables users to generate stunning visuals seamlessly.
 
+## Live Demo
+Check out the live project here: [![Visit Project](https://img.shields.io/badge/Live-Demo-brightgreen)](https://neuro-sketch-frontend.vercel.app/shipping-policy)
+
 ## 📸 Screenshots
 
 ### 🏠 Home Page
