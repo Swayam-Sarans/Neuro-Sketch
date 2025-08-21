@@ -9,8 +9,33 @@ import imageRouter from "./routes/imageRoutes.js";
 const PORT = process.env.PORT || 4000;
 const app = express();
 
+const allowedOrigins = [
+	"https://neuro-sketch-frontend.vercel.app",
+	"https://neuro-sketch-frontend.onrender.com",
+	"http://localhost:5173", // local dev
+];
+
 app.use(express.json());
-app.use(cors());
+app.use(
+	cors({
+		origin: function (origin, callback) {
+			// allow requests with no origin (like mobile apps, curl, Postman)
+			if (!origin) return callback(null, true);
+			if (allowedOrigins.includes(origin)) {
+				return callback(null, true);
+			} else {
+				return callback(new Error("Not allowed by CORS"));
+			}
+		},
+		methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+		allowedHeaders: ["Content-Type", "Authorization"],
+		credentials: true,
+	})
+);
+
+// Handle OPTIONS preflight
+app.options("*", cors());
+
 await connectDB();
 
 app.use("/api/user", userRouter);
