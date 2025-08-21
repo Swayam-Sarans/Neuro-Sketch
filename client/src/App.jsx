@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import Home from "./pages/Home.jsx";
 import Result from "./pages/Result.jsx";
 import BuyTokens from "./pages/BuyTokens.jsx";
-import Navbar from "./components/navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Login from "./components/Login.jsx";
 import Terms from "./pages/Terms.jsx";
