@@ -24,8 +24,8 @@ Neuro-Sketch is a Text-to-Image converter with Sign In/Sign Up authentication, l
 
 |                 Input                 |                   Output                    |
 | :-----------------------------------: | :-----------------------------------------: |
-| ![Image-1](./screenshots/Image-1.png) | ![ResultPage](./screenshots/Download-2.png) |
-| ![Image-2](./screenshots/Image-2.png) | ![Download-1](./screenshots/Download-1.png) |
+| ![Image-1](./screenshots/Image-1.png) | ![ResultPage](./screenshots/Download-1.png) |
+| ![Image-2](./screenshots/Image-2.png) | ![Download-1](./screenshots/Download-2.png) |
 
 ---
 
