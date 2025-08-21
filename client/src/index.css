@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: Outfit, sans-serif;
+}
+
+body,
+* {
+	@apply transition-all duration-300 ease-in-out;
+}
+
+.placeholder-color {
+	color: #e0e0e0;
+	font-weight: 300;
+}
+
+/* Target the main container for dark mode transitions */
