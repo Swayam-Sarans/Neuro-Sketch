@@ -33,9 +33,6 @@ app.use(
 	})
 );
 
-// Handle OPTIONS preflight
-app.options("*", cors());
-
 await connectDB();
 
 app.use("/api/user", userRouter);
